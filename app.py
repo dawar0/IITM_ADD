@@ -3,12 +3,12 @@ import streamlit as st
 st.write("Add two numbers")
 
 # get input from the user
-name = st.text_input("First number")
-name2 = st.text_input("Second number")
+num = st.text_input("First number")
+num2 = st.text_input("Second number")
 
 # add the two numbers
 try:
-    result = int(name) + int(name2)
+    result = int(num) + int(num2)
     st.write(result)
 except:
     st.write("Error")
