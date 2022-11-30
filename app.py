@@ -10,5 +10,5 @@ num2 = st.text_input("Second number")
 try:
     result = int(num) + int(num2)
     st.write(result)
-except:
-    st.write("Error")
+except (ValueError):
+    st.write("Please enter two valid numbers")
