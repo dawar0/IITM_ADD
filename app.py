@@ -1,9 +1,14 @@
-# take two numbers from user and add them
+import streamlit as st
 # and print the result
-print("Enter two numbers to add")
+st.write("Add two numbers")
 
-num1 = input("Enter first number: ")
-num2 = input("Enter second number: ")
+# get input from the user
+name = st.text_input("First number")
+name2 = st.text_input("Second number")
 
-# Add two numbers
-sum = float(num1) + float(num2)
+# add the two numbers
+try:
+    result = int(name) + int(name2)
+    st.write(result)
+except:
+    st.write("Error")
